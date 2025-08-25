@@ -1,16 +1,10 @@
 import streamlit as st
 from streamlit_ketcher import st_ketcher
 from streamlit_navigation_bar import st_navbar #referencia https://github.com/gabrieltempass/streamlit-navigation-bar/wiki/Examples
-
-from rdkit import Chem
-
-import os
-import sys
-ABSOLUT_PATH = os.path.dirname(os.path.realpath(__file__))
-
-sys.path.append(f'{ABSOLUT_PATH}/Thermopred/') 
 from Thermopred.Enthalpie import EnthalpieEnergy
 from Thermopred.GibbsEnergy import GibbsFreeEnergy
+from rdkit import Chem
+
 
 import texts
 
